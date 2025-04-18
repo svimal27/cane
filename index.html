@@ -1,236 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Title for SEO -->
-  <title>Cane – Natural Sugar, Juices & Desserts</title>
-
-  <!-- Primary Meta Tags -->
-<title>Cane – Natural Sugarcane Desserts & Juice</title>
-<meta name="title" content="Cane – Natural Sugarcane Desserts & Juice">
-<meta name="description" content="Discover the sweetness of nature with Cane. Freshly made sugarcane juice, desserts, and unrefined sugar products. 100% raw and refreshing.">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://yourwebsite.com/">
-<meta property="og:title" content="Cane – Natural Sugarcane Desserts & Juice">
-<meta property="og:description" content="Enjoy the goodness of sugarcane with our natural juices, desserts, and more. Taste the difference of raw, real sweetness.">
-<meta property="og:image" content="https://yourwebsite.com/images/cane-preview.jpg">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://yourwebsite.com/">
-<meta property="twitter:title" content="Cane – Natural Sugarcane Desserts & Juice">
-<meta property="twitter:description" content="Freshly pressed sugarcane juice, desserts, and natural sweeteners. Healthy, raw, and refreshing!">
-<meta property="twitter:image" content="https://yourwebsite.com/images/cane-preview.jpg">
-
-  <!-- Meta Description -->
-  <meta name="description" content="Cane brings you 100% natural sugar, delicious desserts, and refreshing juice – all made from raw sugarcane. Healthy, sweet, and refreshing." />
-
-  <!-- Robots Meta -->
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="Cane – Natural Sugar, Juices & Desserts" />
-  <meta property="og:description" content="Cane brings you 100% natural sugar, delicious desserts, and refreshing juice – all made from raw sugarcane." />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Cane+Sugar+Juice" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourwebsite.com/" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <!-- CSS (you can update this later) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cane - Dessert from Sugarcane</title>
   <style>
     * {
-      box-sizing: border-box;
-    }
-  
-    body {
-      font-family: sans-serif;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7fff7;
+      color: #333;
       line-height: 1.6;
-      color: #333;
-      background-color: #fff;
     }
-  
-    header {
-      background-color: #d0f0c0;
-      padding: 1.5em 1em;
-      text-align: center;
-    }
-  
+
     nav {
-      background: #b3e6b3;
-      padding: 1em;
-      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #008037;
+      color: white;
+      padding: 15px 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-  
-    nav a {
-      margin: 0 1em;
-      text-decoration: none;
-      color: #333;
+
+    nav .logo {
+      font-size: 1.5em;
       font-weight: bold;
-      display: inline-block;
     }
-  
-    main {
-      padding: 2em 1em;
-      max-width: 960px;
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1615475397351-3aaf5700f8b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 100vh;
+      color: green;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      padding-top: 100px;
+
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 600px;
       margin: auto;
     }
-  
-    section {
-      margin-bottom: 2em;
-    }
-  
-    article {
-      margin-bottom: 2em;
-    }
-  
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-      margin: 1em 0;
-    }
-  
-    footer {
-      text-align: center;
-      background: #f2f2f2;
-      padding: 1em;
-      font-size: 0.9em;
-    }
-  
-    /* Mobile tweaks */
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5em 0;
-      }
-  
-      header h1 {
-        font-size: 1.8em;
-      }
-  
-      main {
-        padding: 1.5em 1em;
-      }
-    }
-  </style>
-  
 
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Cane",
-      "image": "https://via.placeholder.com/300x200.png?text=Cane+Logo",
-      "description": "Cane brings you 100% natural sugar, delicious desserts, and refreshing juice made from raw sugarcane.",
-      "url": "https://yourwebsite.com/",
-      "telephone": "+6012-345-6789",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Jalan Sugarcane",
-        "addressLocality": "Johor Bahru",
-        "addressRegion": "Johor",
-        "postalCode": "80000",
-        "addressCountry": "MY"
-      },
-      "priceRange": "$",
-      "sameAs": [
-        "https://instagram.com/canesweets",
-        "https://facebook.com/canesweets"
-      ]
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    </script>
-    
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .product {
+      flex: 1 1 30%;
+      background-color: #e6ffe6;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .product h3 {
+      color: #006622;
+      margin-bottom: 10px;
+    }
+
+    .reasons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .reason {
+      flex: 1 1 45%;
+      background-color: #fff0e6;
+      padding: 20px;
+      border-left: 5px solid #ffa94d;
+      border-radius: 8px;
+    }
+
+    .contact-form {
+      background-color: #e6f9e6;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      background-color: #008037;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .location {
+      background-color: #f0fff0;
+      padding: 40px 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .location iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #004d26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    section::before {
+      content: "";
+      display: block;
+      height: 80px;
+      margin-top: -80px;
+      visibility: hidden;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .whatsapp-float img {
+      width: 30px;
+      height: 30px;
+    }
+#blog {
+    padding: 60px 20px;
+    background-color: #e6ffe6;
+  }
+
+  .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .blog-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-post h3 {
+    color: #006622;
+    margin-bottom: 10px;
+  }
+
+  .blog-post p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  .read-more {
+    text-decoration: none;
+    color: #008037;
+    font-weight: bold;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+
+
+@media (max-width: 768px) {
+  /* Sticky Navigation */
+  nav {
+    flex-direction: column; /* Stack navigation items vertically */
+    text-align: center; /* Center the text */
+  }
+
+  nav .logo {
+    font-size: 1.3em; /* Reduce logo size for smaller screens */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack the menu items vertically */
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px; /* Add space between menu items */
+  }
+
+  header {
+    height: auto; /* Allow header to adjust to content size */
+    padding-top: 60px; /* Adjust padding for smaller screen */
+    text-align: center;
+visibility: visible !important;
+display: block !important;
+  }
+
+  header h1 {
+    font-size: 2.5em; /* Make heading smaller */
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 1.1em; /* Reduce font size for mobile */
+    max-width: 90%; /* Reduce max-width to fit smaller screens */
+    margin: auto;
+  }
+
+  section {
+    padding: 60px 10px; /* Adjust padding for mobile */
+  }
+
+  .products {
+    flex-direction: column; /* Stack products vertically */
+    gap: 10px; /* Reduce gap between items */
+  }
+
+  .product {
+    flex: 1 1 100%; /* Make product cards full-width */
+    margin-bottom: 20px; /* Add spacing between product cards */
+  }
+
+  .reason {
+    flex: 1 1 100%; /* Stack reasons vertically */
+    margin-bottom: 20px; /* Add margin between reason blocks */
+  }
+
+  footer {
+    font-size: 0.9em; /* Reduce font size for footer */
+    padding: 15px 10px;
+  }
+
+  /* Floating WhatsApp Icon */
+  .whatsapp {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+/* For larger screens (tablets and above) */
+@media (min-width: 769px) {
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  .products {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product {
+    flex: 1 1 30%;
+  }
+
+  .reason {
+    flex: 1 1 45%;
+  }
+}
+
+  </style>
+<meta name="description" content="Cane Dessert Co. offers the freshest sugarcane-based desserts like cane juice, shaved ice, and natural sugar. Enjoy healthy, sweet treats made fresh daily!">
+<meta name="keywords" content="sugarcane juice, shaved ice, cane sugar, healthy dessert, natural sugarcane treats">
+<meta name="robots" content="index, follow">
+
 </head>
 <body>
-  <header>
-    <h1>Cane</h1>
-    <p>Sweeten your day with nature's finest</p>
+  <nav>
+    <div class="logo">Cane</div>
+    <ul>
+      <li><a href="#products">Menu</a></li>
+      <li><a href="#reasons">Why Us</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+    </ul>
+  </nav>
+
+    <header>
+    <div>
+      <h1>Welcome to Cane</h1>
+      <p>Where every dessert is crafted from the pure goodness of fresh sugarcane. Naturally sweet. Always fresh.</p>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  
-  <main>
-    <section id="about">
-        <h2>About Cane</h2>
-        <p>At Cane, we believe in the power of natural sweetness. Our mission is to bring the freshest juice and desserts straight from raw sugarcane.</p>
-      
-        <!-- Add the internal links here -->
-        <p>Curious how our <a href="#products">natural sugarcane products</a> differ from the rest? Take a look at our selection!</p>
-      
-        <p>Want to know more about the benefits of sugarcane juice? Head to our <a href="#blog">blog section</a> for detailed info.</p>
-      </section>
-      
+  <section id="products">
+    <h2 style="text-align:center; margin-bottom: 40px;">Our Signature Desserts</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Sugarcane Juice</h3>
+        <p>Pure, raw juice directly extracted from fresh sugarcane — no added sugar, no processing.</p>
+      </div>
+      <div class="product">
+        <h3>Cane Shaved Ice</h3>
+        <p>Shaved frozen cane juice cubes served with a variety of natural toppings. Choose your combo!</p>
+      </div>
+      <div class="product">
+        <h3>Natural Cane Sugar</h3>
+        <p>Unrefined, chemical-free sugar made right in front of your eyes. No preservatives, just nature.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reasons">
+    <h2 style="text-align:center; margin-bottom: 40px;">Why Choose Cane?</h2>
+    <div class="reasons">
+      <div class="reason">
+        <h3>Freshly Made in Front of You</h3>
+        <p>Nothing is stored for months. Whether it’s juice or sugar — everything is made fresh before serving.</p>
+      </div>
+      <div class="reason">
+        <h3>No White Sugar Ever</h3>
+        <p>We rely on sugarcane's natural sweetness. No need for processed sugar — healthier and tastier!</p>
+      </div>
+    </div>
+  </section>
+
+<section id="blog">
+  <h2 style="text-align:center; margin-bottom: 40px;">Latest News & Updates</h2>
+  <div class="blog-posts">
+    <div class="blog-post">
+      <h3>Exciting New Dessert Coming Soon!</h3>
+      <p>Stay tuned as we introduce a new dessert that will take your Cane experience to the next level. It's a sweet surprise you don't want to miss!</p>
+      <a href="#!" class="read-more">Read More</a>
+    </div>
+    <div class="blog-post">
+      <h3>Why Cane is the Healthiest Choice</h3>
+      <p>Learn more about why our sugarcane desserts are healthier alternatives compared to traditional sugary snacks. The pure goodness of nature is our secret!</p>
+      <a href="#!" class="read-more">Read More</a>
+    </div>
+    <div class="blog-post">
+      <h3>Customer Favorite: Cane Shaved Ice!</h3>
+      <p>Our Cane Shaved Ice with fresh mango topping has become a customer favorite! Find out why everyone is talking about this delicious treat.</p>
+      <a href="#!" class="read-more">Read More</a>
+    </div>
+  </div>
+</section>
 
 
-    <section id="products">
-        <h2>Our Natural Products</h2>
-      
-        <article>
-          <h3>Fresh Sugarcane Juice</h3>
-          <img src="images/sugarcane-juice.jpg" alt="Freshly pressed sugarcane juice in a glass" width="300" loading="lazy" />
-          <p>Refreshing and naturally sweet. Served chilled with a hint of lime or ginger.</p>
-        </article>
-      
-        <article>
-          <h3>Sugarcane-based Desserts</h3>
-          <img src="images/sugarcane-dessert.jpg" alt="Delicious dessert made with natural sugarcane" width="300" loading="lazy" />
-          <p>Traditional desserts with a twist of cane sweetness. Guilt-free indulgence!</p>
-        </article>
-      
-        <article>
-          <h3>Natural Cane Sugar Packs</h3>
-          <img src="images/natural-cane-sugar.jpg" alt="Packaged natural cane sugar" width="300" loading="lazy" />
-          <p>Perfect for your kitchen. 100% natural, unrefined, and chemical-free.</p>
-        </article>
-      </section>
-      <p style="text-align: right;"><a href="#">↑ Back to Top</a></p>
+  <section id="testimonials">
+    <h2 style="text-align:center; margin-bottom: 40px;">What Our Customers Say</h2>
+    <div class="reasons">
+      <div class="reason">
+        <p>“The freshest sugarcane juice I’ve ever had. It’s my go-to treat every weekend!”</p>
+        <h4>- Aisha, KL</h4>
+      </div>
+      <div class="reason">
+        <p>“Love the shaved ice! Especially with the mango topping. So natural, so good.”</p>
+        <h4>- Farid, Johor</h4>
+      </div>
+    </div>
+  </section>
 
-      
-      <section id="blog">
-        <h2>From the Cane Blog</h2>
-      
-        <article>
-          <h3>5 Health Benefits of Sugarcane Juice</h3>
-          <p><small>Posted on April 16, 2025</small></p>
-          <p>Sugarcane juice is not just refreshing, it's packed with nutrients! From boosting hydration to aiding digestion, here are 5 science-backed reasons to enjoy this natural drink.</p>
-          <a href="#">Read More</a>
-        </article>
-      
-        <article>
-          <h3>How Cane Sugar Is Different from Refined Sugar</h3>
-          <p><small>Posted on April 10, 2025</small></p>
-          <p>Most people don't realize the difference between refined white sugar and natural cane sugar. Discover how our unrefined cane sugar retains essential minerals.</p>
-          <a href="#">Read More</a>
-        </article>
-      </section>
-      <p style="text-align: right;"><a href="#">↑ Back to Top</a></p>
+  <section id="location">
+    <h2 style="text-align:center; margin-bottom: 20px;">Visit Us</h2>
+    <div class="location">
+      <p>Lot G-21, Sugar Mall, Jalan Sweetness, 80000 Johor Bahru, Malaysia</p>
+      <p>Open Daily: 10 AM – 10 PM</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.290793472434!2d103.7618243!3d1.4926594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6dc67ef38407%3A0x9b2e08e4af6c92a0!2sJohor%20Bahru!5e0!3m2!1sen!2smy!4v1713414201701!5m2!1sen!2smy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
 
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: hello@canesweets.com</p>
-      <p>Instagram: @canesweets</p>
-    </section>
-    <p style="text-align: right;"><a href="#">↑ Back to Top</a></p>
-
-  </main>
+  <section id="contact">
+    <h2 style="text-align:center; margin-bottom: 20px;">Get in Touch</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Cane. All rights reserved.</p>
+    <p>&copy; 2025 Cane Dessert Co. All rights reserved.</p>
   </footer>
+
+  <a href="https://wa.me/60123456789" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  </a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Cane Dessert Co.",
+  "address": "Your Business Address",
+  "telephone": "123-456-7890",
+  "url": "https://www.yourwebsite.com",
+  "menu": "https://www.yourwebsite.com/menu"
+}
+</script>
+
+
 </body>
 </html>
