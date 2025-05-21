@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cane - Dessert from Sugarcane</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <title>Cane </title>
   <style>
     * {
       margin: 0;
@@ -20,23 +22,24 @@
     }
 
     nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #008037;
-      color: white;
-      padding: 15px 20px;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #008037;
+  color: white;
+  padding: 15px 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start; /* Changed */
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
     nav .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 40px; /* Added */
+}
 
     nav ul {
       display: flex;
@@ -326,6 +329,12 @@ display: block !important;
   .reason {
     flex: 1 1 45%;
   }
+
+  .product:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+
 }
 
   </style>
@@ -336,11 +345,15 @@ display: block !important;
 </head>
 <body>
   <nav>
-    <div class="logo">Cane</div>
+    <div class="logo">
+      <img src="finallogo.PNG" alt="Cane Logo" style="height: 80px; width: 70px; border-radius: 15%; ">
+    </div>
     <ul>
       <li><a href="#products">Menu</a></li>
       <li><a href="#reasons">Why Us</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#location">Locate Us</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -352,22 +365,26 @@ display: block !important;
   </header>
 
   <section id="products">
-    <h2 style="text-align:center; margin-bottom: 40px;">Our Signature Desserts</h2>
-    <div class="products">
-      <div class="product">
-        <h3>Sugarcane Juice</h3>
-        <p>Pure, raw juice directly extracted from fresh sugarcane — no added sugar, no processing.</p>
-      </div>
-      <div class="product">
-        <h3>Cane Shaved Ice</h3>
-        <p>Shaved frozen cane juice cubes served with a variety of natural toppings. Choose your combo!</p>
-      </div>
-      <div class="product">
-        <h3>Natural Cane Sugar</h3>
-        <p>Unrefined, chemical-free sugar made right in front of your eyes. No preservatives, just nature.</p>
-      </div>
+  <h2 style="text-align:center; margin-bottom: 40px;">Our Signature Desserts</h2>
+  <div class="products">
+    <div class="product">
+      <h3>Sugarcane Juice</h3>
+      <p>Pure, raw juice directly extracted from fresh sugarcane — no added sugar, no processing.</p>
+      <img src="ChatGPT Image1.png" alt="Sugarcane Juice" style="width:100%; margin-top: 10px; border-radius: 8px;">
     </div>
-  </section>
+    <div class="product">
+      <h3>Cane Shaved Ice</h3>
+      <p>Shaved frozen cane juice cubes served with a variety of natural toppings. Choose your combo!</p>
+      <img src="ChatGPT Image2.png" alt="Sugarcane Juice" style="width:100%; margin-top: 10px; border-radius: 8px;">
+    </div>
+    <div class="product">
+      <h3>Natural Cane Sugar</h3>
+      <p>Unrefined, chemical-free sugar made right in front of your eyes. No preservatives, just nature.</p>
+      <img src="ChatGPT Image3.png" alt="Sugarcane Juice" style="width:100%; margin-top: 10px; border-radius: 8px;">
+    </div>
+  </div>
+</section>
+
 
   <section id="reasons">
     <h2 style="text-align:center; margin-bottom: 40px;">Why Choose Cane?</h2>
